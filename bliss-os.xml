@@ -3,13 +3,13 @@
   
   <!-- BlissOS Repos -->
   
-<!--
-  <project path="manifest" name="manifest" remote="BR-x86" revision="r11-r36" />
--->
-  <project path="manifest" name="electrikjesus/platform_manifest-1" remote="ghub" revision="r11-r36" />
-  
-  <project path="bionic" name="platform_bionic" remote="BR-x86" revision="r11-r36" />
-  <project path="build/make" name="platform_build" remote="BR-x86" revision="r11-r36" >
+  <project path="manifest" name="platform_manifest" remote="BlissOS" revision="r" />
+
+ <!-- <project path="manifest" name="electrikjesus/platform_manifest-1" remote="BlissOS" revision="r" /> -->
+
+  <!-- Core -->
+  <project path="bionic" name="platform_bionic" remote="BlissOS" revision="r" />
+  <project path="build/make" name="platform_build_make" remote="BlissOS" revision="r" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -19,38 +19,48 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   
-  <project path="bootable/newinstaller" name="bootable_newinstaller" remote="BR-x86" revision="r11-r36" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" remote="BR-x86" revision="r11-r36" />
+  <!-- Installer and Recovery-->
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="BlissOS" revision="r" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissOS" revision="r" />
 
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="BR-x86" revision="r11-r36" />
-  
-  <project path="external/kernel-drivers" name="external_kernel-drivers" remote="BR-x86" revision="k5.12-b2" />
-  <project path="external/llvm80" name="platform_external_llvm" remote="BR-x86" revision="p9.0-x86-llvm80" />
-  <project path="external/mksh" name="platform_external_mksh" remote="BR-x86" revision="r11-r36" />
-  <project path="external/stagefright-plugins" name="stagefright-plugins" remote="BR-x86" revision="r11-r36" />
-  <project path="external/swiftshader" name="platform_external_swiftshader" remote="BR-x86" revision="swiftshader-llvm10" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="BR-x86" revision="r11-r36" />
-  
-  <project path="frameworks/av" name="frameworks_av" remote="BR-x86" revision="r11-r36"  />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="BR-x86" revision="r11-r36"  />
-  <project path="frameworks/native" name="frameworks_native" remote="BR-x86" revision="r11-r36"  />
-  
-  <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="BR-x86" revision="r11-r36" />
-  <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="BR-x86" revision="r11-r36" />
-  <project path="hardware/lineage/interfaces" name="platform_hardware_lineage_interfaces" remote="BR-x86" revision="r11-r36"/>
-  
-  <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BR-x86" revision="r11-r36" />
-  <project path="packages/apps/Settings" name="BlissRoms-x86/packages_apps_Settings" remote="ghub" revision="r11-r36" />
-  <project path="platform_testing" name="platform_testing" remote="BR-x86" revision="r11-r36" />
-  
-  <project path="system/bt" name="platform_system_bt" remote="BR-x86" revision="r11-r36" />
-  <project path="system/core" name="platform_system_core" remote="BR-x86" revision="r11-r36" />
-  <project path="system/extras" name="BlissRoms-x86/system_extras" remote="ghub" revision="r11-r36" />
-  <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="BR-x86" revision="r11-r36" />
-  <project path="system/vold" name="platform_system_vold" remote="BR-x86" revision="r11-r36" />
-    
+  <!-- External -->
+  <project path="external/kernel-drivers" name="platform_external_kernel-drivers" remote="BlissOS" revision="r" />
+  <project path="external/llvm80" name="platform_external_llvm" remote="BlissOS" revision="r" />
+  <project path="external/mksh" name="platform_external_mksh" remote="BlissOS" revision="r" />
+  <project path="external/stagefright-plugins" name="platform_external_stagefright-plugins" remote="BlissOS" revision="r" />
+  <project path="external/swiftshader" name="platform_external_swiftshader" remote="BlissOS" revision="r" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="BlissOS" revision="r" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="BlissOS" revision="r"  />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="BlissOS" revision="r"  />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="BlissOS" revision="r"  />
+
+  <!-- Hardware -->
+  <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="BlissOS" revision="r" />
+  <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="BlissOS" revision="r" />
+  <project path="hardware/lineage/interfaces" name="platform_hardware_lineage_interfaces" remote="BlissOS" revision="r"/>
+
+  <!-- Apps -->
+  <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BlissOS" revision="r" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="BlissOS" revision="r" />
+
+  <!-- Sepolicy -->
+  <project path="device/lineage/sepolicy" name="platform_device_lineage_sepolicy" remote="BlissOS" revision="r" />
+
+  <!-- System -->
+  <project path="system/bt" name="platform_system_bt" remote="BlissOS" revision="r" />
+  <project path="system/core" name="platform_system_core" remote="BlissOS" revision="r" />
+  <project path="system/extras" name="platform_system_extras" remote="BlissOS" revision="r" />
+  <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="BlissOS" revision="r" />
+  <project path="system/vold" name="platform_system_vold" remote="BlissOS" revision="r" />
+
+  <!-- Misc -->
+  <project path="platform_testing" name="platform_testing" remote="BlissOS" revision="r" />
+
   <!-- Vendors -->
-  <project path="vendor/bliss" name="platform_vendor_bliss" remote="BR-x86" revision="r11-r36" />
-  <project name="vendor_foss" path="vendor/foss" remote="BR-x86" revision="foss-minimal" />
+  <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissOS" revision="r" />
+  <project path="vendor/foss" name="platform_vendor_foss" remote="BlissOS" revision="r" />
 
 </manifest>
+
