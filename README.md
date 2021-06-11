@@ -2,7 +2,7 @@
 
 Bliss OS
 -----------------------
-Download the BlissRoms source code, based on [AOSP](https://android.googlesource.com), [phhusson](https://github.com/phhusson/treble_manifest) & [BlissRoms](https://github.com/BlissRoms/platform_manifest)
+Download the BlissOS source code, based on [AOSP](https://android.googlesource.com), [phhusson](https://github.com/phhusson/treble_manifest) & [BlissRoms](https://github.com/BlissRoms/platform_manifest)
 
 ---------------------------------------------------
 
@@ -45,11 +45,11 @@ Initializing Repository
 Repo initialization :
     
     ## Releases Repo ##
-    $ repo init -u https://github.com/BlissRoms-x86/manifest.git -b r11-r36
+    repo init -u https://github.com/BlissOS/platform_manifest.git -b r
 
 sync repo :
 
-    $ repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+    repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
     
 Options
 --------
