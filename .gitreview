@@ -1,5 +1,5 @@
 [gerrit]
-host=review.blissroms.com
-port=29418
-project=platform_manifest.git
+host=review.blissos.org
+port=29419
+project=platform_manifest
 defaultbranch=r
