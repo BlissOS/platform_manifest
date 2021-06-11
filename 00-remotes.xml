@@ -4,6 +4,12 @@
   <!-- Remotes -->
   <remote name="x86" fetch="https://scm.osdn.net/gitroot/android-x86" />
   <remote name="BR-x86" fetch="https://github.com/BlissRoms-x86" />
+
+  <remote name="BlissOS"
+          fetch="https://github.com/BlissOS"
+          revision="r"
+          review="review.blissos.org" />
+
   <remote name="apc" fetch="https://github.com/Android-PC" />
   <remote name="me176c" fetch="https://github.com/me176c-dev/" />
   <remote name="maurossi" fetch="https://github.com/maurossi" />
