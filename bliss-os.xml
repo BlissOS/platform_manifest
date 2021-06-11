@@ -2,10 +2,9 @@
 <manifest>
   
   <!-- BlissOS Repos -->
-  
-  <project path="manifest" name="platform_manifest" remote="BlissOS" revision="r" />
 
- <!-- <project path="manifest" name="electrikjesus/platform_manifest-1" remote="BlissOS" revision="r" /> -->
+  <!-- Manifest -->
+  <project path="manifest" name="platform_manifest" remote="BlissOS" revision="r" />
 
   <!-- Core -->
   <project path="bionic" name="platform_bionic" remote="BlissOS" revision="r" />
