@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-  <!-- BlissOS Repos -->
 
   <!-- Manifest -->
-  <project path="manifest" name="platform_manifest" remote="BlissOS" revision="r" />
+  <project path="manifest" name="platform_manifest" remote="BlissOS" />
+
+  <!-- General Repos -->
+  <project path="art" name="platform_art" remote="BlissOS" />
+  <project path="build/blueprint" name="platform_build_blueprint" remote="BlissOS" />
+
+  <project path="build/soong" name="platform_build_soong" remote="BlissRoms" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
 
   <!-- Core -->
-  <project path="bionic" name="platform_bionic" remote="BlissOS" revision="r" />
-  <project path="build/make" name="platform_build_make" remote="BlissOS" revision="r" >
+  <project path="bionic" name="platform_bionic" remote="BlissOS" />
+  <project path="build/make" name="platform_build_make" remote="BlissOS" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -19,47 +26,88 @@
   </project>
   
   <!-- Installer and Recovery-->
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="BlissOS" revision="r" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissOS" revision="r" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="BlissOS" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissOS" />
 
   <!-- External -->
-  <project path="external/kernel-drivers" name="platform_external_kernel-drivers" remote="BlissOS" revision="r" />
-  <project path="external/llvm80" name="platform_external_llvm" remote="BlissOS" revision="r" />
-  <project path="external/mksh" name="platform_external_mksh" remote="BlissOS" revision="r" />
-  <project path="external/stagefright-plugins" name="platform_external_stagefright-plugins" remote="BlissOS" revision="r" />
-  <project path="external/swiftshader" name="platform_external_swiftshader" remote="BlissOS" revision="r" />
-  <project path="external/tinycompress" name="platform_external_tinycompress" remote="BlissOS" revision="r" />
+  <project path="external/kernel-drivers" name="platform_external_kernel-drivers" remote="BlissOS" />
+  <project path="external/llvm80" name="platform_external_llvm" remote="BlissOS" />
+  <project path="external/mksh" name="platform_external_mksh" remote="BlissOS" />
+  <project path="external/stagefright-plugins" name="platform_external_stagefright-plugins" remote="BlissOS" />
+  <project path="external/swiftshader" name="platform_external_swiftshader" remote="BlissOS" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="BlissOS" />
+  <project path="external/airbnb-lottie" name="platform_external_airbnb-lottie" remote="BlissOS" />
+  <project path="external/perfetto" name="platform_external_perfetto" remote="BlissOS" />
+  <project path="external/faceunlock" name="external_unlock" remote="BlissRoms-gitlab" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="platform_frameworks_av" remote="BlissOS" revision="r"  />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="BlissOS" revision="r"  />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="BlissOS" revision="r"  />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="BlissOS" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="BlissOS" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="BlissOS" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="BlissOS" />
+  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="BlissOS" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="BlissOS" />
 
   <!-- Hardware -->
-  <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="BlissOS" revision="r" />
-  <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="BlissOS" revision="r" />
-  <project path="hardware/lineage/interfaces" name="platform_hardware_lineage_interfaces" remote="BlissOS" revision="r"/>
+  <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="BlissOS" />
+  <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="BlissOS" />
+  <project path="hardware/lineage/interfaces" name="platform_hardware_lineage_interfaces" remote="BlissOS" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="BlissOS" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="BlissOS" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="BlissOS" />
+
+  <!-- Inputmethods -->
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="BlissOS" />
 
   <!-- Apps -->
-  <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BlissOS" revision="r" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="BlissOS" revision="r" />
+  <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BlissOS" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="BlissOS" />
+  <project path="packages/apps/BlissUpdater" name="platform_packages_apps_BlissUpdater" remote="BlissOS" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" remote="BlissOS" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="BlissOS" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="BlissOS" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="BlissOS" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="BlissOS" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="BlissOS" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="BlissOS" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="BlissOS" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="BlissOS" />
+  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="BlissOS" />
+  <project path="packages/apps/Stk" name="platform_packages_apps_Stk" remote="BlissOS" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="BlissOS" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="BlissOS" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="BlissOS" />
+  <project path="packages/overlays/Lineage" name="platform_packages_overlays_Lineage" remote="BlissOS" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="BlissOS" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" clone-depth="1" remote="BlissOS" />
+
+  <!-- Providers -->
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="BlissOS" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="BlissOS" />
 
   <!-- Sepolicy -->
-  <project path="device/lineage/sepolicy" name="platform_device_lineage_sepolicy" remote="BlissOS" revision="r" />
+  <project path="device/lineage/sepolicy" name="platform_device_lineage_sepolicy" remote="BlissOS" />
 
   <!-- System -->
-  <project path="system/bt" name="platform_system_bt" remote="BlissOS" revision="r" />
-  <project path="system/core" name="platform_system_core" remote="BlissOS" revision="r" />
-  <project path="system/extras" name="platform_system_extras" remote="BlissOS" revision="r" />
-  <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="BlissOS" revision="r" />
-  <project path="system/vold" name="platform_system_vold" remote="BlissOS" revision="r" />
+  <project path="system/bt" name="platform_system_bt" remote="BlissOS" />
+  <project path="system/core" name="platform_system_core" remote="BlissOS" />
+  <project path="system/extras" name="platform_system_extras" remote="BlissOS" />
+  <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="BlissOS" />
+  <project path="system/vold" name="platform_system_vold" remote="BlissOS" />
+  <project path="system/netd" name="platform_system_netd" remote="BlissOS" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="BlissOS" />
+  <project path="system/security" name="platform_system_security" remote="BlissOS" />
 
   <!-- Misc -->
-  <project path="platform_testing" name="platform_testing" remote="BlissOS" revision="r" />
+  <project path="platform_testing" name="platform_testing" remote="BlissOS" />
 
   <!-- Vendors -->
-  <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissOS" revision="r" />
-  <project path="vendor/foss" name="platform_vendor_foss" remote="BlissOS" revision="r" />
+  <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissOS" />
+  <project path="vendor/foss" name="platform_vendor_foss" remote="BlissOS" />
+  <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" />
+  <project path="vendor/overlays" name="platform_vendor_overlays" remote="BlissRoms"/>
 
 </manifest>
 

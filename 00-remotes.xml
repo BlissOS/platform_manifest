@@ -10,6 +10,28 @@
           revision="r"
           review="review.blissos.org" />
 
+  <remote name="BlissRoms"
+          fetch="https://github.com/BlissRoms"
+          revision="r"
+          review="review.blissroms.org" />
+
+  <remote name="BlissRoms-Devices"
+          fetch="https://github.com/BlissRoms-Devices" />
+
+  <remote name="BlissRoms-gitlab"
+          fetch="https://gitlab.com/BlissRoms"
+          revision="r" />
+
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
+
+  <remote name="los"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-18.1" />
+
   <remote name="apc" fetch="https://github.com/Android-PC" />
   <remote name="me176c" fetch="https://github.com/me176c-dev/" />
   <remote name="maurossi" fetch="https://github.com/maurossi" />
