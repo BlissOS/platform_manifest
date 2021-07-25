@@ -142,7 +142,6 @@
 	<remove-project name="platform/platform_testing" />
 	<remove-project name="platform/packages/apps/Car/Calendar" />
 	<remove-project name="platform/packages/apps/Car/Cluster" />
-	<remove-project name="platform/packages/apps/Car/CompanionDeviceSupport" />
 	<remove-project name="platform/packages/apps/Car/Dialer" />
 	<remove-project name="platform/packages/apps/Car/Hvac" />
 	<remove-project name="platform/packages/apps/Car/LatinIME" />
