@@ -81,7 +81,7 @@
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="BlissOS" />
 
   <!-- Prebuilts -->
-  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" clone-depth="1" remote="BlissOS" />
+  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" clone-depth="1" remote="BlissRoms" />
 
   <!-- Providers -->
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="BlissOS" />
