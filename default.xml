@@ -834,7 +834,6 @@
 
   <include name="00-remotes.xml" />
   <include name="01-remove.xml" />
-  <include name="bliss.xml" />
   <include name="los.xml" />
   <include name="02-android-x86.xml" />
   <include name="bliss-os.xml" />
