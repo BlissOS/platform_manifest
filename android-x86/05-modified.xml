@@ -18,6 +18,7 @@
   <project path="system/linkerconfig" name="android_system_linkerconfig" remote="BlissOS" />
   <project path="system/vold" name="platform_system_vold" remote="BlissOS" />
   <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="BlissOS" />
+  <project path="toolchain/pgo-profiles" name="platform_toolchain_pgo-profiles" remote="BlissOS" />
   <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissOS" />
   <project path="vendor/overlays" name="platform_vendor_overlays" remote="BlissOS" />  
 
