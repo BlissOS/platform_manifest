@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/pOad4eK.png">
+<img src="banner.png">
 
 Bliss OS
 -----------------------
