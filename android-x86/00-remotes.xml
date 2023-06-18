@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote name="x86" fetch="https://scm.osdn.net/gitroot/android-x86" />
+  <remote name="maurossi" fetch="https://github.com/maurossi" />
+  <remote name="ghub" fetch="https://github.com/" />
+  <remote name="ag" fetch="https://gitlab.com/android-generic" />
+  <remote name="gl" fetch="https://gitlab.com" />
+  <remote name="ghub" fetch="https://github.com/" />
+  <remote name="celadon" fetch="https://github.com/projectceladon/" />
+  <remote name="hm" fetch="https://github.com/hmtheboy154" />
+  <remote name="axon" fetch="https://github.com/axonasif/" />
+  <remote name="sg" fetch="https://github.com/supremegamers" />
+  <remote name="BlissOS"
+          fetch="https://github.com/BlissOS"
+          revision="typhoon-x86" />
+
+</manifest>

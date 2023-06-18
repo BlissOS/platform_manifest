@@ -1187,4 +1187,10 @@
 
   <include name="bliss.xml" />
   <include name="los.xml" />
+  <include name="android-x86/00-remotes.xml" />
+  <include name="android-x86/01-remove.xml" />
+  <include name="android-x86/02-android-x86.xml" />
+  <include name="android-x86/03-extras.xml" />
+  <include name="android-x86/04-modified.xml" />
+
 </manifest>

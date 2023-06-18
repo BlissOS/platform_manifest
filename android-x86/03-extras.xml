@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Android-Generic Apps -->
+    <project name="android-generic/vendor_prebuilts_agp-apps" path="vendor/agp-apps" remote="gitlab" revision="master" />
+
+    <!-- FOSS Apps -->
+    <project name="vendor_foss" path="vendor/foss" remote="sg" revision="hmchoice" />
+
+</manifest>
