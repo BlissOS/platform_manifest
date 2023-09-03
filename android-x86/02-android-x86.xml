@@ -65,6 +65,6 @@
   <project path="hardware/x86power" name="hardware_x86power" remote="ag-github" revision="r11" />
 
   <!-- AOSP components but newer -->
-  <project path="external/toybox" name="android_external_toybox" remote="BR-x86" revision="arcadia-x86" />
+  <project path="external/toybox" name="android_external_toybox" remote="ag-github" revision="13" />
 
 </manifest>
