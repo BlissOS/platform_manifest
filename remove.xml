@@ -76,6 +76,7 @@
   <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/external/roboto-fonts" />
   <remove-project name="platform/external/android-nn-driver" />
+  <remove-project name="platform/external/piex" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
@@ -88,11 +89,13 @@
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/hardware/google/graphics/gs201" />
   <remove-project name="platform/hardware/google/pixel" />
   <remove-project name="platform/hardware/google/graphics/common" />
   <remove-project name="platform/hardware/google/pixel-sepolicy" />
   <remove-project name="platform/hardware/google/gchips" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
 
   <!-- Hardware (Qcom) -->
   <remove-project name="platform/hardware/qcom/audio" />
@@ -109,9 +112,15 @@
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/qcom/sdm845/gps" />
+  <remove-project name="platform/hardware/qcom/sm7250/gps" />
+  <remove-project name="platform/hardware/qcom/sm8150/gps" />
+  <remove-project name="platform/hardware/qcom/sm7150/gps" />
+  <remove-project name="platform/hardware/qcom/sm8150p/gps" />
 
   <!-- Modules -->
   <remove-project name="platform/packages/modules/adb"/>
+  <remove-project name="platform/packages/modules/Connectivity"/>
   <remove-project name="platform/packages/modules/Bluetooth"/>
 
   <!-- Packages -->
@@ -145,6 +154,7 @@
   <remove-project name="platform/system/logging" />
   <remove-project name="platform/system/libziparchive" />
   <remove-project name="platform/system/media" />
+  <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/tools/mkbootimg" />
