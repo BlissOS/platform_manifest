@@ -14,7 +14,7 @@
   <project path="hardware/intel/libsensors" name="hardware_intel_libsensors" remote="ag-github" revision="r-x86" />
   <project path="hardware/liblights" name="platform_hardware_liblights" remote="ag-github" revision="r-x86" />
   <project path="hardware/libsensors" name="platform_hardware_libsensors" remote="ag-github" revision="13-x86" />
-  <project path="hardware/libbt-vendor-intel" name="hardware_libbt-vendor-intel" remote="ag-github" revision="master" />
+  <project path="hardware/libbt-vendor-intel" name="hardware_libbt-vendor-intel" remote="ag-github" revision="13-x86" />
   <project path="hardware/gps" name="platform_hardware_gps" remote="ag-github" revision="r-x86" />
   <project path="vendor/intel/hardware/interfaces" name="vendor_intel_hardware_interfaces" remote="ag-github" revision="13-x86" sync-s="true" />
 
