@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Initrd & installer -->
-  <project path="bootable/newinstaller" name="bootable_newinstaller" remote="BR-x86" revision="arcadia-x86" />
+  <project path="bootable/newinstaller" name="bootable_newinstaller" remote="BlissOS" revision="typhoon-x86" />
 
   <!-- Device tree -->
   <project path="device/generic/common" name="device_generic_common" remote="BlissOS" sync-s="true" />
