@@ -12,4 +12,8 @@
     <!-- nano -->
     <project name="android_external_nano" path="external/nano" remote="ag-github" revision="7.2" />
 
+    <!-- BlissBass -->
+    <remote name="BlissBass" fetch="https://github.com/Bliss-Bass" />
+    <project path="vendor/bliss/blissethernet" name="platform_external_blissethernet" revision="arcadia-x86" remote="BlissBass" />
+
 </manifest>

@@ -29,6 +29,7 @@
     <remove-project name="platform_hardware_interfaces" />
     <remove-project name="platform_packages_apps_Settings" />
     <remove-project name="platform_packages_modules_Bluetooth" />
+    <remove-project name="platform_packages_modules_Connectivity" />
     <remove-project name="platform_system_core" />   
     <remove-project name="platform_system_media" />   
     <remove-project name="platform/system/hardware/interfaces" />   
