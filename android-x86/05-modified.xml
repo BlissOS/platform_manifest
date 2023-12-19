@@ -3,7 +3,6 @@
   <project path="manifest" name="platform_manifest" remote="BlissOS" />
   <project path="art" name="platform_art" remote="BlissOS" />
   <project path="bionic" name="platform_bionic" remote="BlissOS" />
-  <!-- <project path="bootable/recovery" name="platform_bootable_recovery" remote="BR-x86" revision="arcadia-x86" /> -->
   <project path="external/mksh" name="platform_external_mksh" remote="BlissOS" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="BlissOS" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="BlissOS" />
