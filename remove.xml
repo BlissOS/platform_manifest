@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- ASB -->
+  <remove-project name="platform/cts" />
+  <remove-project name="platform/external/pdfium" />
+
   <!-- Device -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
@@ -77,6 +81,9 @@
   <remove-project name="platform/external/roboto-fonts" />
   <remove-project name="platform/external/android-nn-driver" />
   <remove-project name="platform/external/piex" />
+  <remove-project name="platform/external/zstd" />
+  <remove-project name="platform/external/libxml2" />
+  <remove-project name="platform/external/webp" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
@@ -122,6 +129,9 @@
   <remove-project name="platform/packages/modules/adb"/>
   <remove-project name="platform/packages/modules/Connectivity"/>
   <remove-project name="platform/packages/modules/Bluetooth"/>
+  <remove-project name="platform/packages/modules/Wifi"/>
+  <remove-project name="platform/packages/modules/DnsResolver" />
+  <remove-project name="platform/packages/modules/StatsD" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Contacts"/>
@@ -141,6 +151,7 @@
   <!-- Providers -->
   <remove-project name="platform/packages/providers/DownloadProvider"/>
   <remove-project name="platform/packages/providers/MediaProvider" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
 
   <!-- Services -->
   <remove-project name="platform/packages/services/Telecomm" />
@@ -148,6 +159,7 @@
 
   <!-- System -->
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/ca-certificates" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/keymaster" />
   <remove-project name="platform/system/libhwbinder" />
@@ -160,5 +172,8 @@
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
+
+  <!-- Misc -->
+  <remove-project name="platform/tools/apksig" />
 
 </manifest>

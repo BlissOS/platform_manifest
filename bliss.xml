@@ -32,6 +32,10 @@
 
   <!-- End Remove AOSP repos -->
 
+  <!-- ASB -->
+  <project path="cts" name="platform_cts" groups="cts,pdk-cw-fs,pdk-fs" remote="BlissRoms" />
+  <project path="external/pdfium" name="platform_external_pdfium" groups="pdk" remote="BlissRoms" />
+
   <!-- General Repos -->
   <project path="manifest" name="platform_manifest" remote="BlissRoms" />
   <project path="bionic" name="platform_bionic" remote="BlissRoms" />
@@ -55,6 +59,7 @@
   <project path="external/roboto-fonts" name="platform_external_roboto-fonts" remote="BlissRoms" />
   <project path="external/faceunlock" name="external_unlock" remote="BlissRoms-gitlab" />
   <project path="external/piex" name="platform_external_piex" remote="BlissRoms" />
+  <project path="external/webp" name="platform_external_webp" remote="BlissRoms" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="platform_frameworks_base" remote="BlissRoms" />
@@ -89,6 +94,9 @@
   <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="BlissRoms" />
   <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="BlissRoms" />
   <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissRoms" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="BlissRoms" />
+  <project path="packages/modules/DnsResolver" name="platform_packages_modules_DnsResolver" remote="BlissRoms" />
+  <project path="packages/modules/StatsD" name="platform_packages_modules_StatsD" remote="BlissRoms" />
 
   <!-- Packages -->
   <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BlissRoms" />
@@ -119,6 +127,7 @@
   <!-- Providers -->
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="BlissRoms" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="BlissRoms" />
+  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="BlissRoms" />
 
   <!-- Sepolicy -->
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="platform_device_qcom_sepolicy_vndr" remote="BlissRoms" revision="t-legacy-um" />
@@ -139,6 +148,7 @@
   <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" remote="BlissRoms" />
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="BlissRoms" />
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="BlissRoms" />
+  <project path="system/ca-certificates" name="platform_system_ca-certificates" remote="BlissRoms" />
 
   <!-- Vendor -->
   <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissRoms" />

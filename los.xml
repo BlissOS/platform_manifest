@@ -21,6 +21,7 @@
   <project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/chromium-webview/prebuilt/x86" name="android_external_chromium-webview_prebuilt_x86" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/chromium-webview/prebuilt/x86_64" name="android_external_chromium-webview_prebuilt_x86_64" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
+  <project path="external/bash" name="android_external_bash" remote="lineage" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="lineage" />
@@ -33,9 +34,12 @@
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="lineage" />
+  <project path="external/rsync" name="android_external_rsync" remote="lineage" />
   <project path="external/unrar" name="android_external_unrar" remote="lineage" />
   <project path="external/vim" name="android_external_vim" remote="lineage" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="lineage" />
+  <project path="external/zstd" name="android_external_zstd" groups="pdk" remote="lineage" />
+  <project path="external/libxml2" name="android_external_libxml2" groups="pdk,libxml2" remote="lineage" />
 
   <!-- Hardware -->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="lineage" />
@@ -176,6 +180,7 @@
   <!-- Misc -->
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" />
+  <project path="tools/apksig" name="android_tools_apksig" groups="pdk,tradefed" remote="lineage" />
 
   <!-- NXP Opensource -->
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" revision="lineage-19.1" remote="lineage" />
