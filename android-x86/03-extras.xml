@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Android-Generic Apps -->
+    <project name="android-generic/vendor_prebuilts_agp-apps" path="vendor/agp-apps" remote="gitlab" revision="master" />
+
+    <!-- FOSS Apps -->
+    <project name="vendor_foss" path="vendor/foss" remote="ag-github" revision="hmchoice" />
+
+    <!-- nano -->
+    <project name="android_external_nano" path="external/nano" remote="ag-github" revision="7.2" />
+
+    <!--MindTheGapps-->
+    <remote name="mindthegapps" fetch="https://gitlab.com/MindTheGapps"  />
+    <project path="vendor/gapps" name="vendor_gapps" revision="upsilon" remote="mindthegapps" />
+
+    <!-- BlissBass -->
+    <remote name="BlissBass" fetch="https://github.com/Bliss-Bass" />
+    <project path="vendor/bliss/blissethernet" name="platform_external_blissethernet" revision="arcadia-x86" remote="BlissBass" />
+
+</manifest>
