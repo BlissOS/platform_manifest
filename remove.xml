@@ -79,6 +79,7 @@
   <remove-project name="platform/external/android-nn-driver" />
   <remove-project name="platform/external/cronet" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/zstd" />
@@ -87,9 +88,11 @@
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/frameworks/libs/systemui" />
 
   <!-- Hardware -->
+  <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/google/gchips" />
@@ -98,10 +101,20 @@
   <remove-project name="platform/hardware/google/pixel-sepolicy" />
 
   <!-- Hardware (QCOM) -->
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/wlan" />
+
+  <!-- Kernel -->
+  <remove-project name="kernel/configs" />
 
   <!-- Modules -->
   <remove-project name="platform/packages/modules/adb"/>
+  <remove-project name="platform/packages/modules/Bluetooth"/>
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Camera2" />
@@ -115,6 +128,7 @@
   <remove-project name="platform/packages/apps/ThemePicker" />
 
   <!-- System -->
+  <remove-project name="platform/system/bpf" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/libhidl" />
