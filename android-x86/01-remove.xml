@@ -28,7 +28,7 @@
     <remove-project name="platform_frameworks_native" />
     <remove-project name="platform_hardware_interfaces" />
     <remove-project name="platform_packages_apps_Settings" />
-    <remove-project name="platform/packages/modules/Bluetooth" />
+    <remove-project name="platform_packages_modules_Bluetooth" />
     <remove-project name="platform/prebuilts/abi-dumps/vndk" />
     <remove-project name="platform/system/apex" />
     <remove-project name="platform_system_core" />
