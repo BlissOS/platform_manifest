@@ -39,7 +39,7 @@
   <!-- Kernel -->
   <project path="kernel" name="kerNel_common" remote="ag-github" sync-s="true" revision="gloria-20240130" />
   <project path="kernel-surface" name="kernel_cOmmon" remote="ag-github" sync-s="true" revision="gloria-surface-20240130" />
-  <project path="kernel-zenith" name="Darkmatter-kernel" remote="hm" sync-s="true" revision="crimson" />
+  <project path="kernel-zenith" name="kernel-zenith" remote="ag-github" sync-s="true" revision="6.7" />
   <project path="external/kernel-drivers" name="exTernal_kernel-drivers" sync-s="true" remote="ag-github" revision="6.1" />
   <project path="external/kernel-drivers/rtw88" name="lwfinger/rtw88" remote="github" revision="master" />
   <project path="external/kernel-drivers-zenith" name="external_keRnel-drivers" sync-s="true" remote="ag-github" revision="zenith" />
