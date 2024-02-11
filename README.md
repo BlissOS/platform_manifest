@@ -48,7 +48,7 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 
 ## Options
 
-	BLISS_BUILD_VARIANT - (vanilla, gapps, pixelgapps, foss, microg) - We currently use this to specify what type of extra apps and services to include in the build. 
+	BLISS_BUILD_VARIANT - (vanilla, gapps, foss, microg) - We currently use this to specify what type of extra apps and services to include in the build. 
 ***Note: Default BLISS_BUILD_VARIANT is VANILLA.***
 
    BLISS_SPECIAL_VARIANT - This can be custom set if you wanna build a version for a specific device 
