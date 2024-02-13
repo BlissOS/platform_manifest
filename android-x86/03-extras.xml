@@ -13,6 +13,9 @@
     <remote name="mindthegapps" fetch="https://gitlab.com/MindTheGapps"  />
     <project path="vendor/gapps" name="vendor_gapps" revision="upsilon" remote="mindthegapps" />
 
+    <!-- Extra Bliss OS Wallpapers -->
+    <project path="packages/apps/BOSWallpapers" name="platform_packages_apps_BOSWallpapers" remote="BlissOS" revision="typhoon-x86" />
+
     <!-- BlissBass -->
     <remote name="BlissBass" fetch="https://github.com/Bliss-Bass" />
     <project path="vendor/bliss/blissethernet" name="platform_external_blissethernet" revision="arcadia-x86" remote="BlissBass" />

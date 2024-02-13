@@ -42,6 +42,7 @@
     <!-- Remove some ROM-made repo -->
     <remove-project name="platform_vendor_bliss" /> 
     <remove-project name="platform_vendor_gapps" />
+    <remove-project name="platform_vendor_overlays" />
     <remove-project name="platform_packages_apps_Blissify" />
 
 </manifest>
