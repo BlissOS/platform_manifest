@@ -71,6 +71,10 @@
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.49" />
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
 
+  <!-- Modules -->
+  <project path="packages/modules/NeuralNetworks" name="android_packages_modules_NeuralNetworks" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+
   <!-- Packages -->
   <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" groups="pdk-fs" remote="lineage" />
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="lineage" />
