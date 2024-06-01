@@ -40,6 +40,7 @@
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="lineage" />
   <project path="external/zstd" name="android_external_zstd" groups="pdk" remote="lineage" />
   <project path="external/libxml2" name="android_external_libxml2" groups="pdk,libxml2" remote="lineage" />
+  <project path="external/sonivox" name="android_external_sonivox" groups="pdk" remote="lineage" />
 
   <!-- Hardware -->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="lineage" />

@@ -84,6 +84,7 @@
   <remove-project name="platform/external/zstd" />
   <remove-project name="platform/external/libxml2" />
   <remove-project name="platform/external/webp" />
+  <remove-project name="platform/external/sonivox" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
