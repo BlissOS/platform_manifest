@@ -40,7 +40,7 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 
 **Repo initialization**
    
-    repo init -u https://github.com/BlissOS/platform_manifest.git -b snapshots/universe-x86-20240211 --git-lfs
+    repo init -u https://github.com/BlissOS/platform_manifest.git -b snapshots/universe-x86-20240605 --git-lfs
 
 **Sync repo**
 
