@@ -44,7 +44,7 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 
 **Sync repo**
 
-    repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+    repo sync -c --force-sync --no-tags --no-clone-bundle -j4
 
 ## Options
 
