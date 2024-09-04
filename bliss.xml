@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="BlissRoms"
+          fetch="https://github.com/BlissRoms"
+          revision="voyager"
+          review="review.blissroms.org" />
+
+  <remote name="BlissRoms-Devices"
+          fetch="https://github.com/BlissRoms-Devices" />
+
+  <remote name="BlissRoms-gitlab"
+          fetch="https://gitlab.com/BlissLabs/BlissRoms"
+          revision="voyager" />
+
+  <remote name="BR-x86"
+          fetch="https://github.com/BlissRoms-x86" />
+
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
+
+  <!-- Remove first some AOSP repos -->
+  <include name="remove.xml" />
+
+  <!-- General Repos -->
+  <project path="manifest" name="platform_manifest" remote="BlissRoms" />
+  <project path="bootable/deprecated-ota" name="platform_bootable_deprecated-ota" remote="BlissRoms" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissRoms" />
+  <project path="build/blueprint" name="platform_build_blueprint" remote="BlissRoms" />
+  <project path="build/make" name="platform_build_make" remote="BlissRoms">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" remote="BlissRoms">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="development" name="platform_development" remote="BlissRoms" />
+
+
+  <!-- External -->
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="BlissRoms" />
+  <project path="external/gptfdisk" name="platform_external_gptfdisk" groups="pdk" remote="BlissRoms" />
+  <project path="external/mksh" name="platform_external_mksh" groups="pdk" remote="BlissRoms" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="BlissRoms" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
+  <project path="external/zstd" name="platform_external_zstd" groups="pdk" remote="BlissRoms" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="BlissRoms" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="BlissRoms" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="BlissRoms" />
+  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" remote="BlissRoms" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="BlissRoms" />
+  <project path="hardware/bliss/interfaces" name="platform_hardware_bliss_interfaces" remote="BlissRoms" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="BlissRoms" />
+  <project path="hardware/lineage/compat" name="platform_hardware_lineage_compat" remote="BlissRoms" />
+  <project path="hardware/google/pixel" name="platform_hardware_google_pixel" groups="generic_fs,pixel" remote="BlissRoms" />
+
+  <!-- Hardware QCOM -->
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="BlissRoms" />
+
+  <!-- Kernel Configs -->
+  <project path="kernel/configs" name="platform_kernel_configs" remote="BlissRoms" />
+
+  <!-- Modules -->
+  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="BlissRoms" />
+  <project path="packages/modules/common" name="platform_packages_modules_common" remote="BlissRoms" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="BlissRoms" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissRoms" groups="pdk" />
+  <project path="packages/modules/Virtualization" name="platform_packages_modules_Virtualization" remote="BlissRoms" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="BlissRoms" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BlissRoms" />
+  <project path="packages/apps/BlissSystemUI" name="platform_packages_apps_BlissSystemUI" remote="BlissRoms" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="BlissRoms" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="BlissRoms" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="BlissRoms" />
+  <project path="packages/apps/GameSpace" name="platform_packages_apps_GameSpace" remote="BlissRoms" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="BlissRoms" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="BlissRoms" />
+  <project path="packages/apps/ParanoidSense" name="platform_packages_apps_paranoidsense" remote="BlissRoms-gitlab" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="BlissRoms" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="BlissRoms" />
+  <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="BlissRoms" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="BlissRoms" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="BlissRoms" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/calyx/datura" name="platform_prebuilts_calyx_datura" remote="BlissRoms" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="platform_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="BlissRoms" />
+  <project path="prebuilts/custom-sdk" name="platform_prebuilts_custom-sdk" remote="BlissRoms" />
+
+  <!-- Sepolicy -->
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="qcom,qssi" remote="BlissRoms"/>
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" groups="qcom,sdm660" remote="BlissRoms" revision="universe-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="platform_device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="BlissRoms" revision="universe-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="platform_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="BlissRoms" revision="universe-caf-sm8450" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="platform_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" remote="BlissRoms" revision="universe-caf-sm8550" />
+  <project path="device/bliss/sepolicy" name="platform_device_bliss_sepolicy" remote="BlissRoms" />
+
+  <!-- System -->
+  <project path="system/core" name="platform_system_core" remote="BlissRoms" />
+  <project path="system/extras" name="platform_system_extras" remote="BlissRoms" />
+  <project path="system/libhidl" name="platform_system_libhidl" remote="BlissRoms" />
+  <project path="system/logging" name="platform_system_logging" remote="BlissRoms" />
+  <project path="system/netd" name="platform_system_netd" remote="BlissRoms" />
+  <project path="system/security" name="platform_system_security" remote="BlissRoms" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="BlissRoms" />
+  <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" remote="BlissRoms" />
+  <project path="system/vold" name="platform_system_vold" remote="BlissRoms" />
+  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="BlissRoms" />
+
+  <!-- Tools -->
+  <project path="bliss/scripts" name="platform_scripts" remote="BlissRoms" />
+
+  <!-- Vendor -->
+  <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissRoms" />
+  <project path="vendor/certification" name="platform_vendor_certification" remote="BlissRoms-gitlab" />
+  <project path="vendor/lineage_compat" name="platform_vendor_lineage_compat" remote="BlissRoms" />
+  <project path="vendor/overlays" name="platform_vendor_overlays" remote="BlissRoms" />
+  <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="BlissRoms-gitlab" clone-depth="1" />
+  <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" />
+  <project path="vendor/SystemUIClocks" name="platform_vendor_systemuiclocks" remote="BlissRoms-gitlab" clone-depth="1" />
+  <project path="vendor/nxp/opensource/libfmjni" name="platform_vendor_qcom_opensource_libfmjni" remote="BlissRoms" />
+
+  <!-- Vendor NXP -->
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform_vendor_nxp_opensource_packages_apps_Nfc" remote="BlissRoms" />
+
+</manifest>

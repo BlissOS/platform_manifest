@@ -2,13 +2,13 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-15.0.0_r1"
+  <default revision="refs/tags/android-15.0.0_r2"
            remote="aosp"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r1"/>
+  <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r2"/>
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- BEGIN open-source projects -->
@@ -1468,5 +1468,9 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
   <!-- END open-source projects -->
+
+  <include name="bliss.xml" />
+  <include name="los.xml" />
+  <include name="pixel.xml" />
 
 </manifest>
