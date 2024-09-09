@@ -63,6 +63,7 @@
   </project>
   <project path="hardware/qcom/sm8150/gps" name="android_hardware_qcom_sm8150_gps" groups="qcom,qcom_sm8150" remote="lineage" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="lineage" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="lineage" />
 
   <!-- Inline kernel build -->
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
@@ -73,8 +74,10 @@
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
 
   <!-- Modules -->
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="lineage" />
   <project path="packages/modules/NeuralNetworks" name="android_packages_modules_NeuralNetworks" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="lineage" />
 
   <!-- Packages -->
   <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" groups="pdk-fs" remote="lineage" />
@@ -87,6 +90,7 @@
 
   <!-- System -->
   <project path="system/logging" name="android_system_logging" remote="lineage" revision="lineage-20.0" />
+  <project path="system/libfmq" name="android_system_libfmq" groups="pdk" remote="lineage" />
   <project path="system/libziparchive" name="android_system_libziparchive" remote="lineage" revision="lineage-20.0" />
 
   <!-- QCOM Hals -->
@@ -183,6 +187,7 @@
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,waipio-video" remote="lineage" />
 
   <!-- Misc -->
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" />
   <project path="tools/apksig" name="android_tools_apksig" groups="pdk,tradefed" remote="lineage" />

@@ -165,6 +165,7 @@
   <remove-project name="platform/system/ca-certificates" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/keymaster" />
+  <remove-project name="platform/system/libfmq" />
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/system/logging" />
   <remove-project name="platform/system/libziparchive" />
