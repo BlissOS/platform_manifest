@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Initrd & installer -->
+  <project path="bootable/newinstaller" name="bootable_newinstaller" remote="BlissOS" revision="universe-x86" />
+
+  <!-- Device tree -->
+  <project path="device/generic/common" name="device_generic_common" remote="BlissOS" sync-s="true" />
+  <project path="device/generic/x86_64" name="BlissROMs-x86/platform_device_generic_x86_64" remote="ghub" revision="r11" />
+  <project path="device/generic/x86" name="BlissROMs-x86/platform_device_generic_x86" remote="ghub" revision="r-x86" />
+
+</manifest>

@@ -1,98 +1,134 @@
 <img src="banner.png">
 <p align="center">
-<a href="https://blissroms.org">Website</a> |
-<a href="https://downloads.blissroms.org">Download</a> |
+<a href="https://https://blissos.org">Website</a> |
+<a href="https://sourceforge.net/projects/blissos-x86">Download</a> |
 <a href="https://www.paypal.com/donate/?hosted_button_id=J5SLZ7MQNCT24">Donate</a> |
-<a href="https://docs.blissroms.org">Documentation</a> |
-<a href="https://www.instagram.com/blissroms">Instagram</a> |
-<a href="https://t.me/BlissROM_Updates">Telegram</a>
+<a href="https://docs.blissos.org/">Documentation</a> |
+<a href="https://t.me/blissx86">Telegram</a>
 
-## BlissRoms
+## BlissOS
 
-Download the BlissRoms source code, based on [AOSP](https://android.googlesource.com) & [BlissRoms](https://github.com/BlissRoms/platform_manifest)
+Download the BlissOS source code, based on [AOSP](https://android.googlesource.com) & [Android-x86](http://android-x86.org/)
+
+<div align="center">
+<strong><i>Modified for PC build using Android-Generic Project</i></strong>
+<br>
+<img src="https://i.ibb.co/rf2rv3M/Yep1l4L.png">
+<br>
+</div>
 
 ---------------------------------------------------
 
 Please read the [AOSP building instructions](http://source.android.com/source/index.html) before proceeding.
 
 -----------------------
-## What you need to build [BlissRoms](https://github.com/BlissROMs/platform_manifest)
+## What you need to build [BlissOS](https://github.com/BlissRoms-x86/manifest)
 
 
     Latest Ubuntu LTS Releases https://www.ubuntu.com/download/server
     Decent CPU (Dual Core or better for a faster performance)
-    8GB RAM (16GB for Virtual Machine)
+    24GB RAM (30GB for Virtual Machine)
     250GB Hard Drive (about 170GB for the Repo and then building space needed)
   
 -----------------------
 
-Installing Java 8
-
-    sudo add-apt-repository ppa:openjdk/ppa
-    sudo apt-get update && upgrade
-    sudo apt-get install openjdk-8-jdk
-    update-alternatives --config java  (make sure Java 8 is selected)
-    update-alternatives --config javac (make sure Java 8 is selected)
-    reboot
-    
------------------------
-
 ## Grabbing Dependencies
 
-    sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet git-lfs
+    sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python3-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet meson glslang-tools git-lfs libncurses5 libncurses5:i386 libelf-dev aapt zstd rdfind nasm
+
+    Rust toolchain & programs are also required. We recommend you to install them using rustup ! First, remove distro' Rust toolchain:
+    sudo apt remove rustc bindgen cargo -y
+    
+    Next install rustup by following this page:
+    https://www.rust-lang.org/tools/install
+
+    After getting rustup installed, install required programs & toolchain:
+    cargo install cargo-ndk
+    rustup target add x86_64-linux-android i686-linux-android
+    cargo install --version 0.69.1 bindgen-cli
+    cargo install cbindgen
 
 ## Initializing Repository
 
 **Repo initialization**
    
-    repo init -u https://github.com/BlissRoms/platform_manifest.git -b universe --git-lfs
+    repo init -u https://github.com/BlissOS/platform_manifest.git -b universe-x86 --git-lfs
 
 **Sync repo**
 
-    repo sync -c --force-sync --no-tags --no-clone-bundle -j10 --optimized-fetch --prune
+    repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
 
 ## Options
 
 	BLISS_BUILD_VARIANT - (vanilla, gapps, foss, microg) - We currently use this to specify what type of extra apps and services to include in the build. 
 ***Note: Default BLISS_BUILD_VARIANT is VANILLA.***
 
+   BLISS_SPECIAL_VARIANT - This can be custom set if you wanna build a version for a specific device 
+    for example `-jupiter` for Steam Deck or `-surface` for Microsoft Surface series
+
+## Setup FOSS apps (if you choose to build FOSS)
+----------------------------
+
+- If you want to build with FOSS (this will include microG Services & some extra apps), go to vendor/foss and then type
+```
+    ./update.sh
+```
+And then choose 1 (x86/x86_64) to fetch all the apps. If you want to include Bromite Webview in, type this instead
+```
+    ./update.sh "" bromite
+```
 ## Building
 
-     . build/envsetup.sh
-     blissify options deviceCodename
+    $ . build/envsetup.sh
+    $ lunch bliss_x86_64-userdebug
+    $ make iso_img
      
+***Adding build options***
 
-**Options:**
-```
--h | --help: Shows the help dialog
--c | --clean: Clean up before running the build
--d | --devclean: Clean up device only before running the build
--v | --vanilla: Build with no added app store solution **default option**
--g | --gapps: Build with Minimal Google Play Services added
--f | --foss: build with FOSS (arm64-v8a) app store solutions added **requires vendor/foss**
--m | --microg: Build with MicroG
-```
-
-**Examples:**
-
-- **To build with gapps**
-```
-     blissify -g deviceCodename
-```
+Before running `lunch`, you can add variables into the build to integrate more stuff into the image.
+Note that you can put different variables into the build.
 
 - **To build with FOSS**
 ```
-     blissify -f deviceCodename
+    export BLISS_BUILD_VARIANT=foss
 ```
 
-- **To build with gapps and deviceclean**
+- **To build with [MindTheGapps](https://gitlab.com/MindTheGapps/vendor_gapps)**
 ```
-     blissify -g -d deviceCodename
+    export BLISS_BUILD_VARIANT=gapps
+```
+- **To add a custom label into a device-specific build**
+```
+    export BLISS_SPECIAL_VARIANT=-Jupiter
 ```
 
-**This method is also backwards compatible with the legacy blissify command also**
+- **To build the special "surface" variant which include kernel with patches from linux-surface and the iptsd userspace touchscreen daemon**
 ```
-     blissify deviceCodename
+    export BOARD_IS_SURFACE_BUILD=true
 ```
+
+- **To build the special "go" variant for BlissOS Go**
+```
+    export BOARD_IS_GO_BUILD=true
+```
+
+- **To build the special "zenith" variant for BlissOS Zenith**
+```
+    export BOARD_IS_ZENITH_BUILD=true
+```
+
+**More build options will be in Extras part including proprietary native-bridge/widevine libraries**
+
+Extras
+-------
+
+We do offer some extra libraries that can be compiled into the build. These include :
+
+***Google's ndk_translation***
+
+https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt
+
+Clone to `vendor/google/proprietary/ndk_translation-prebuilt`, The variable to activate this is `ANDROID_USE_NDK_TRANSLATION=true`
+
 ## Report build issues
-- You can reach us via [Telegram (BlissRoms Build Support)](https://t.me/Team_Bliss_Build_Support)
+- You can reach us via [Telegram (Android™-Generic (x86 PC) Community Development)](https://t.me/androidgenericpc)
