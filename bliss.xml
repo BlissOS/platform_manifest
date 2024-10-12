@@ -25,6 +25,11 @@
   <!-- Remove first some AOSP repos -->
   <include name="remove.xml" />
 
+  <!-- ASB -->
+  <project path="build/release" name="platform_build_release" groups="pdk,tradefed" remote="BlissRoms" />
+  <project path="libcore" name="platform_libcore" groups="pdk" remote="BlissRoms" />
+  <project path="packages/modules/IntentResolver" name="platform_packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="BlissRoms" />
+
   <!-- General Repos -->
   <project path="manifest" name="platform_manifest" remote="BlissRoms" />
   <project path="art" name="platform_art" remote="BlissRoms" />
