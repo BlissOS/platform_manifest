@@ -67,21 +67,10 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
    BLISS_SPECIAL_VARIANT - This can be custom set if you wanna build a version for a specific device 
     for example `-jupiter` for Steam Deck or `-surface` for Microsoft Surface series
 
-## Setup FOSS apps (if you choose to build FOSS)
-----------------------------
-
-- If you want to build with FOSS (this will include microG Services & some extra apps), go to vendor/foss and then type
-```
-    ./update.sh
-```
-And then choose 1 (x86/x86_64) to fetch all the apps. If you want to include Bromite Webview in, type this instead
-```
-    ./update.sh "" bromite
-```
 ## Building
 
     $ . build/envsetup.sh
-    $ lunch bliss_x86_64-userdebug
+    $ lunch bliss_x86_64-ap1a-userdebug
     $ make iso_img
      
 ***Adding build options***
@@ -89,15 +78,6 @@ And then choose 1 (x86/x86_64) to fetch all the apps. If you want to include Bro
 Before running `lunch`, you can add variables into the build to integrate more stuff into the image.
 Note that you can put different variables into the build.
 
-- **To build with FOSS**
-```
-    export BLISS_BUILD_VARIANT=foss
-```
-
-- **To build with [MindTheGapps](https://gitlab.com/MindTheGapps/vendor_gapps)**
-```
-    export BLISS_BUILD_VARIANT=gapps
-```
 - **To add a custom label into a device-specific build**
 ```
     export BLISS_SPECIAL_VARIANT=-Jupiter
