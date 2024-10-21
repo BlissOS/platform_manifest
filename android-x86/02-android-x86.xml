@@ -65,8 +65,7 @@
   <project path="external/tree" name="external_tree" remote="ag-gitlab" revision="u-x86" />
   <project path="external/v86d" name="external_v86d" remote="ag-github" revision="r-x86" />
 
-  <!-- Power & Memtrack HALs-->
-  <project path="hardware/memtrack" name="hardware_memtrack" remote="ag-github" revision="u-x86" />
+  <!-- Power HAL-->
   <project path="hardware/x86power" name="hardware_x86power" remote="ag-github" revision="r11" />
 
   <!-- AOSP components but newer -->
