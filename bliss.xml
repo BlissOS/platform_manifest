@@ -107,6 +107,7 @@
   <project path="device/bliss/sepolicy" name="platform_device_bliss_sepolicy" remote="BlissRoms" />
 
   <!-- System -->
+  <project path="system/bpf" name="platform_system_bpf" remote="BlissRoms" />
   <project path="system/core" name="platform_system_core" remote="BlissRoms" />
   <project path="system/extras" name="platform_system_extras" remote="BlissRoms" />
   <project path="system/libhidl" name="platform_system_libhidl" remote="BlissRoms" />
