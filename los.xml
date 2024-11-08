@@ -24,6 +24,7 @@
   <project path="external/chromium-webview/prebuilt/arm" name="android_external_chromium-webview_prebuilt_arm" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/chromium-webview/prebuilt/x86" name="android_external_chromium-webview_prebuilt_x86" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
+  <project path="external/chromium-webview/prebuilt/x86_64" name="android_external_chromium-webview_prebuilt_x86_64" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/libncurses" name="android_external_libncurses" remote="lineage" />
   <project path="external/libnl" name="platform_external_libnl" groups="pdk" remote="BlissRoms" />
   <project path="external/libcxx" name="platform_external_libcxx" groups="pdk" remote="BlissRoms" />
