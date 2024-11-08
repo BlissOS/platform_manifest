@@ -63,7 +63,6 @@
   <project path="hardware/bliss/interfaces" name="platform_hardware_bliss_interfaces" remote="BlissRoms" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="BlissRoms" />
   <project path="hardware/lineage/compat" name="platform_hardware_lineage_compat" remote="BlissRoms" />
-  <project path="hardware/google/pixel" name="platform_hardware_google_pixel" groups="generic_fs,pixel" remote="BlissRoms" />
 
   <!-- Hardware QCOM -->
   <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="BlissRoms" />

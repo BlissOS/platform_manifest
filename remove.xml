@@ -112,6 +112,9 @@
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/hardware/google/pixel" />
+  <remove-project name="platform/hardware/google/pixel-sepolicy" />
+  <remove-project name="platform/hardware/google/graphics/common" />
+  <remove-project name="platform/hardware/google/gchips" />
 
   <!-- Hardware (QCOM) -->
   <remove-project name="platform/hardware/qcom/audio" />
