@@ -94,6 +94,9 @@
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/kotlinc" />
+  <remove-project name="platform/external/kotlinx.coroutines" />
+  <remove-project name="platform/external/kotlinx.serialization" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/libnl" />
   <remove-project name="platform/external/mksh" />
