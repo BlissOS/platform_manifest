@@ -50,6 +50,7 @@
   <!-- Hardware -->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="lineage" />
   <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" groups="qcom,pdk-qcom" remote="lineage" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="lineage" />
 
   <!-- Inline kernel build -->
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
