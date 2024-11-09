@@ -56,6 +56,7 @@
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="lineage" />
 
   <!-- Hardware Pixel -->
+  <project path="hardware/google/camera" name="android_hardware_google_camera" groups="pdk" remote="lineage" />
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" groups="generic_fs,pixel" remote="lineage" />
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="lineage" />
   <project path="hardware/google/graphics/common" name="android_hardware_google_graphics_common" groups="pdk-lassen,pdk-gs-arm" remote="lineage" />
