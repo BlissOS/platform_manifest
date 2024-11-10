@@ -72,9 +72,10 @@
 
   <!-- Modules -->
   <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="BlissRoms" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissRoms" groups="pdk" />
   <project path="packages/modules/common" name="platform_packages_modules_common" remote="BlissRoms" />
   <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="BlissRoms" />
-  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissRoms" groups="pdk" />
+  <project path="packages/modules/NetworkStack" name="platform_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="BlissRoms" />
   <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="BlissRoms" />
 
   <!-- Packages -->
@@ -92,6 +93,7 @@
   <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="BlissRoms" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="BlissRoms" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="BlissRoms" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="BlissRoms" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/calyx/datura" name="platform_prebuilts_calyx_datura" remote="BlissRoms" />
@@ -110,6 +112,7 @@
   <project path="system/bpf" name="platform_system_bpf" remote="BlissRoms" />
   <project path="system/core" name="platform_system_core" remote="BlissRoms" />
   <project path="system/extras" name="platform_system_extras" remote="BlissRoms" />
+  <project path="system/keymaster" name="platform_system_keymaster" remote="BlissRoms" />
   <project path="system/libhidl" name="platform_system_libhidl" remote="BlissRoms" />
   <project path="system/logging" name="platform_system_logging" remote="BlissRoms" />
   <project path="system/netd" name="platform_system_netd" remote="BlissRoms" />
