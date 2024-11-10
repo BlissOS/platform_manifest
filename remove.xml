@@ -92,6 +92,8 @@
 
   <!-- External -->
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/cronet" />
+  <remove-project name="platform/external/dtc" />
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/kotlinc" />
@@ -114,6 +116,8 @@
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/hardware/samsung/nfc" />
+  <remove-project name="platform/hardware/st/nfc" />
   <remove-project name="platform/hardware/google/camera" />
   <remove-project name="platform/hardware/google/pixel" />
   <remove-project name="platform/hardware/google/pixel-sepolicy" />
@@ -128,7 +132,9 @@
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
+  <remove-project name="platform/hardware/qcom/sm8150/gps" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/hardware/qcom/sm7250/display" />
   <remove-project name="platform/hardware/qcom/sm7250/gps" />
