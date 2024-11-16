@@ -134,7 +134,6 @@
   <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="BlissRoms-gitlab" clone-depth="1" />
   <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" />
   <project path="vendor/SystemUIClocks" name="platform_vendor_systemuiclocks" remote="BlissRoms-gitlab" clone-depth="1" />
-  <project path="vendor/nxp/opensource/libfmjni" name="platform_vendor_qcom_opensource_libfmjni" remote="BlissRoms" />
 
   <!-- Vendor NXP -->
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform_vendor_nxp_opensource_packages_apps_Nfc" remote="BlissRoms" />
