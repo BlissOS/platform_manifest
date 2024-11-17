@@ -1,98 +1,103 @@
-<img src="banner.png">
-<p align="center">
-<a href="https://blissroms.org">Website</a> |
-<a href="https://downloads.blissroms.org">Download</a> |
-<a href="https://www.paypal.com/donate/?hosted_button_id=J5SLZ7MQNCT24">Donate</a> |
-<a href="https://docs.blissroms.org">Documentation</a> |
-<a href="https://www.instagram.com/blissroms">Instagram</a> |
-<a href="https://t.me/BlissROM_Updates">Telegram</a>
+<img src="banner.png" alt="BlissRoms Banner" align="center">  
 
-## BlissRoms
+<p align="center">  
+  <a href="https://blissroms.org"><strong>Website</strong></a> |  
+  <a href="https://downloads.blissroms.org"><strong>Download</strong></a> |  
+  <a href="https://www.paypal.com/donate/?hosted_button_id=J5SLZ7MQNCT24"><strong>Donate</strong></a> |  
+  <a href="https://docs.blissroms.org"><strong>Documentation</strong></a> |  
+  <a href="https://www.instagram.com/blissroms"><strong>Instagram</strong></a> |  
+  <a href="https://t.me/BlissROM_Updates"><strong>Telegram</strong></a>  
+</p>  
 
-Download the BlissRoms source code, based on [AOSP](https://android.googlesource.com) & [BlissRoms](https://github.com/BlissRoms/platform_manifest)
+---  
 
----------------------------------------------------
+## BlissRoms  
 
-Please read the [AOSP building instructions](http://source.android.com/source/index.html) before proceeding.
+BlissRoms brings the latest features, optimizations, and a seamless Android experience tailored to your device. Built on top of [AOSP](https://android.googlesource.com) and enhanced by the dedicated [BlissRoms](https://blissroms.org) team, our ROM ensures performance and reliability.  
 
------------------------
-## What you need to build [BlissRoms](https://github.com/BlissROMs/platform_manifest)
+## Prerequisites for Building BlissRoms  
 
+### System Requirements:  
+- **Latest Ubuntu LTS Release** ([Download Here](https://www.ubuntu.com/download/server))  
+- **CPU**: Dual-Core or better for faster builds  
+- **RAM**: 8GB (16GB recommended for Virtual Machines)  
+- **Storage**: 250GB (minimum 170GB for repo and build space)  
 
-    Latest Ubuntu LTS Releases https://www.ubuntu.com/download/server
-    Decent CPU (Dual Core or better for a faster performance)
-    8GB RAM (16GB for Virtual Machine)
-    250GB Hard Drive (about 170GB for the Repo and then building space needed)
-  
------------------------
+### Java Setup:  
+Install Java 8 for compatibility:  
+```bash  
+sudo add-apt-repository ppa:openjdk/ppa  
+sudo apt-get update && sudo apt-get upgrade  
+sudo apt-get install openjdk-8-jdk  
+update-alternatives --config java  # Select Java 8  
+update-alternatives --config javac # Select Java 8  
+sudo reboot  
+```  
 
-Installing Java 8
+### Required Packages:  
+Install dependencies in one go:  
+```bash  
+sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet git-lfs  
+```  
 
-    sudo add-apt-repository ppa:openjdk/ppa
-    sudo apt-get update && upgrade
-    sudo apt-get install openjdk-8-jdk
-    update-alternatives --config java  (make sure Java 8 is selected)
-    update-alternatives --config javac (make sure Java 8 is selected)
-    reboot
-    
------------------------
+## Repository Initialization  
 
-## Grabbing Dependencies
+### [Stable Release Source Repo](https://github.com/BlissRoms/stable_releases/tree/universe)
+For stable builds, use the following initialization:  
+```bash  
+repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v17.8.2-universe --git-lfs
+repo sync -c --force-sync --no-tags --no-clone-bundle -j10 --optimized-fetch --prune  
+```  
 
-    sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet git-lfs
+### Staging Source Repo (DON'T REPORT BUGS OR RELEASE):  
+```bash  
+repo init -u https://github.com/BlissRoms/platform_manifest.git -b universe --git-lfs  
+```  
 
-## Initializing Repository
+## Build BlissRoms  
 
-**Repo initialization**
-   
-    repo init -u https://github.com/BlissRoms/platform_manifest.git -b universe --git-lfs
+Set up your build environment:  
+```bash  
+. build/envsetup.sh  
+blissify [options] deviceCodename  
+```  
 
-**Sync repo**
+### Build Options:  
+| Option     | Description                                              |  
+|------------|----------------------------------------------------------|  
+| `-h`       | Show help dialog                                         |  
+| `-c`       | Perform a full clean before building                     |  
+| `-d`       | Clean device-specific files before building              |  
+| `-v`       | Build Vanilla (no added app store) **[Default Option]**  |  
+| `-g`       | Include Gapps						|  
+| `-f`       | Include FOSS app store solutions **(requires vendor/foss)** |  
 
-    repo sync -c --force-sync --no-tags --no-clone-bundle -j10 --optimized-fetch --prune
+### Examples:  
+- **Build with GApps**  
+  ```bash  
+  blissify -g deviceCodename  
+  ```  
+- **Build with FOSS**  
+  ```bash  
+  blissify -f deviceCodename  
+  ```  
+- **Build with GApps and device clean**  
+  ```bash  
+  blissify -g -d deviceCodename  
+  ```  
 
-## Options
+### Backward Compatibility:  
+The legacy `blissify` command remains supported:  
+```bash  
+blissify deviceCodename  
+```  
 
-	BLISS_BUILD_VARIANT - (vanilla, gapps, foss, microg) - We currently use this to specify what type of extra apps and services to include in the build. 
-***Note: Default BLISS_BUILD_VARIANT is VANILLA.***
+## Reporting Build Issues  
 
-## Building
+For issues with builds from the **Stable Release Source Repo**, join our **[Telegram Build Support Group](https://t.me/Team_Bliss_Build_Support)**.  
 
-     . build/envsetup.sh
-     blissify options deviceCodename
-     
+---  
 
-**Options:**
-```
--h | --help: Shows the help dialog
--c | --clean: Clean up before running the build
--d | --devclean: Clean up device only before running the build
--v | --vanilla: Build with no added app store solution **default option**
--g | --gapps: Build with Minimal Google Play Services added
--f | --foss: build with FOSS (arm64-v8a) app store solutions added **requires vendor/foss**
--m | --microg: Build with MicroG
-```
+**Happy Building!** 😊  
 
-**Examples:**
-
-- **To build with gapps**
-```
-     blissify -g deviceCodename
-```
-
-- **To build with FOSS**
-```
-     blissify -f deviceCodename
-```
-
-- **To build with gapps and deviceclean**
-```
-     blissify -g -d deviceCodename
-```
-
-**This method is also backwards compatible with the legacy blissify command also**
-```
-     blissify deviceCodename
-```
-## Report build issues
-- You can reach us via [Telegram (BlissRoms Build Support)](https://t.me/Team_Bliss_Build_Support)
+---  
