@@ -58,6 +58,7 @@
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="lineage" />
   <project path="hardware/samsung/nfc" name="android_hardware_samsung_nfc" groups="pdk" remote="lineage" />
   <project path="hardware/st/nfc" name="android_hardware_st_nfc" groups="pdk" remote="lineage" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="lineage" />
 
   <!-- Hardware Pixel -->
   <project path="hardware/google/camera" name="android_hardware_google_camera" groups="pdk" remote="lineage" />
