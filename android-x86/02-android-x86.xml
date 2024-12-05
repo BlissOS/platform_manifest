@@ -35,6 +35,7 @@
   <project path="prebuilts/llvm-min-tblgen" name="llvm-min-tblgen" remote="ag-github" revision="release_19.x_old-glibc" />
   <project path="external/mesa" name="external_mesa" remote="ag-github" revision="24.3_prebuilt-intel-shaders" />
   <project path="external/minigbm" name="external_minigbm" remote="ag-github" revision="14-x86" />
+  <project path="external/hbm-prebuilts" name="external_hbm-prebuilts" remote="ag-github" revision="11" />
 
   <!-- Kernel -->
   <project path="kernel/x86/common" name="kerNel_common" remote="ag-github" sync-s="true" revision="hm/crimson" />
