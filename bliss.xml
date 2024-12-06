@@ -53,6 +53,7 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/gptfdisk" name="platform_external_gptfdisk" groups="pdk" remote="BlissRoms" />
   <project path="external/mksh" name="platform_external_mksh" groups="pdk" remote="BlissRoms" />
+  <project path="external/skia" name="platform_external_skia" groups="pdk,qcom_msm8x26" remote="BlissRoms" />
   <project path="external/tigervnc" name="platform_external_tigervnc" groups="pdk" remote="BlissRoms" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="BlissRoms" />
   <project path="external/zstd" name="platform_external_zstd" groups="pdk" remote="BlissRoms" />
@@ -100,6 +101,7 @@
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="BlissRoms" />
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="BlissRoms" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="BlissRoms" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="BlissRoms" />
   <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="BlissRoms" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="BlissRoms" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="BlissRoms" />
@@ -122,6 +124,7 @@
   <project path="system/bpf" name="platform_system_bpf" remote="BlissRoms" />
   <project path="system/core" name="platform_system_core" remote="BlissRoms" />
   <project path="system/extras" name="platform_system_extras" remote="BlissRoms" />
+  <project path="system/keymint" name="platform_system_keymint" groups="pdk" remote="BlissRoms" />
   <project path="system/libhidl" name="platform_system_libhidl" remote="BlissRoms" />
   <project path="system/logging" name="platform_system_logging" remote="BlissRoms" />
   <project path="system/netd" name="platform_system_netd" remote="BlissRoms" />
