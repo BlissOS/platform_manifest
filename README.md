@@ -45,7 +45,7 @@ Installing Java 8
 
 **Repo initialization**
    
-    repo init -u https://github.com/BlissRoms/platform_manifest.git -b voyager --git-lfs
+    repo init -u https://github.com/BlissRoms/platform_manifest.git -b voyager-qpr1 --git-lfs
 
 **Sync repo**
 
