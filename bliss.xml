@@ -31,7 +31,6 @@
   <project path="packages/modules/IntentResolver" name="platform_packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="BlissRoms" />
 
   <!-- General Repos -->
-  <project path="manifest" name="platform_manifest" remote="BlissRoms" />
   <project path="art" name="platform_art" remote="BlissRoms" />
   <project path="bionic" name="platform_bionic" remote="BlissRoms" />
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissRoms" />
