@@ -6,10 +6,6 @@
           revision="voyager"
           review="review.blissroms.org" />
 
-  <remote name="BlissRoms-Beta"
-          fetch="https://github.com/BlissRoms-Beta"
-          revision="voyager-qpr1" />
-
   <remote name="BlissRoms-Devices"
           fetch="https://github.com/BlissRoms-Devices" />
 
@@ -19,6 +15,10 @@
 
   <remote name="BR-x86"
           fetch="https://github.com/BlissRoms-x86" />
+
+  <remote name="gitea"
+          fetch="https://gitea.com/StudioKxys"
+          revision="voyager-qpr1" />
 
   <remote name="github"
           fetch="https://github.com/" />
@@ -30,10 +30,10 @@
   <include name="remove.xml" />
 
   <!-- General Repos -->
-  <project path="bionic" name="platform_bionic" remote="BlissRoms-Beta" />
-  <project path="bootable/deprecated-ota" name="platform_bootable_deprecated-ota" remote="BlissRoms-Beta" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissRoms-Beta" />
-  <project path="build/make" name="platform_build_make" remote="BlissRoms-Beta">
+  <project path="bionic" name="platform_bionic" remote="BlissRoms" />
+  <project path="bootable/deprecated-ota" name="platform_bootable_deprecated-ota" remote="BlissRoms" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissRoms" />
+  <project path="build/make" name="platform_build_make" remote="BlissRoms">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -42,43 +42,43 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="platform_build_soong" remote="BlissRoms-Beta">
+  <project path="build/soong" name="platform_build_soong" remote="BlissRoms">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- External -->
-  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="BlissRoms-Beta" />
-  <project path="external/gptfdisk" name="platform_external_gptfdisk" groups="pdk" remote="BlissRoms-Beta" />
-  <project path="external/mksh" name="platform_external_mksh" groups="pdk" remote="BlissRoms-Beta" />
-  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="BlissRoms-Beta" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="BlissRoms" />
+  <project path="external/gptfdisk" name="platform_external_gptfdisk" groups="pdk" remote="BlissRoms" />
+  <project path="external/mksh" name="platform_external_mksh" groups="pdk" remote="BlissRoms" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="BlissRoms" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
-  <project path="external/zstd" name="platform_external_zstd" groups="pdk" remote="BlissRoms-Beta" />
+  <project path="external/zstd" name="platform_external_zstd" groups="pdk" remote="BlissRoms" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="platform_frameworks_av" remote="BlissRoms-Beta" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="BlissRoms" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="BlissRoms" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="BlissRoms-Beta" />
-  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" remote="BlissRoms-Beta" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="BlissRoms" />
+  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" remote="BlissRoms" />
 
   <!-- Hardware -->
-  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="BlissRoms-Beta" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="BlissRoms" />
   <project path="hardware/bliss/interfaces" name="platform_hardware_bliss_interfaces" remote="BlissRoms" />
-  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="BlissRoms-Beta" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="BlissRoms" />
 
   <!-- Hardware QCOM -->
-  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="BlissRoms-Beta" />
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="BlissRoms" />
 
   <!-- Kernel Configs -->
-  <project path="kernel/configs" name="platform_kernel_configs" remote="BlissRoms-Beta" />
+  <project path="kernel/configs" name="platform_kernel_configs" remote="BlissRoms" />
 
   <!-- Modules -->
-  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="BlissRoms-Beta" />
-  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissRoms-Beta" groups="pdk" />
-  <project path="packages/modules/common" name="platform_packages_modules_common" remote="BlissRoms-Beta" />
-  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="BlissRoms-Beta" />
-  <project path="packages/modules/NetworkStack" name="platform_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="BlissRoms-Beta" />
-  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="BlissRoms-Beta" />
+  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="BlissRoms" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissRoms" groups="pdk" />
+  <project path="packages/modules/common" name="platform_packages_modules_common" remote="BlissRoms" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="BlissRoms" />
+  <project path="packages/modules/NetworkStack" name="platform_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="BlissRoms" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="BlissRoms" />
 
   <!-- Packages -->
   <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BlissRoms" />
@@ -91,7 +91,8 @@
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="BlissRoms" />
   <project path="packages/apps/LMOFreeform" name="platform_packages_apps_LMOFreeform" remote="BlissRoms" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="BlissRoms" />
-  <project path="packages/apps/ParanoidSense" name="platform_packages_apps_paranoidsense" remote="BlissRoms-gitlab" />
+  <project path="packages/apps/ParanoidSense" name="platform_packages_apps_ParanoidSense" remote="BlissRoms-gitlab" />
+  <project path="packages/apps/ParallelSpace" name="platform_packages_apps_ParallelSpace" remote="BlissRoms" revision="universe" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="BlissRoms" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="BlissRoms" />
   <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" remote="BlissRoms" />
@@ -113,29 +114,29 @@
   <project path="device/bliss/sepolicy" name="platform_device_bliss_sepolicy" remote="BlissRoms" />
 
   <!-- System -->
-  <project path="system/bpf" name="platform_system_bpf" remote="BlissRoms-Beta" />
-  <project path="system/core" name="platform_system_core" remote="BlissRoms-Beta" />
-  <project path="system/extras" name="platform_system_extras" remote="BlissRoms-Beta" />
-  <project path="system/keymaster" name="platform_system_keymaster" remote="BlissRoms-Beta" />
-  <project path="system/libhidl" name="platform_system_libhidl" remote="BlissRoms-Beta" />
-  <project path="system/logging" name="platform_system_logging" remote="BlissRoms-Beta" />
-  <project path="system/netd" name="platform_system_netd" remote="BlissRoms-Beta" />
-  <project path="system/security" name="platform_system_security" remote="BlissRoms-Beta" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" remote="BlissRoms-Beta" />
-  <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" remote="BlissRoms-Beta" />
-  <project path="system/vold" name="platform_system_vold" remote="BlissRoms-Beta" />
-  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="BlissRoms-Beta" />
+  <project path="system/bpf" name="platform_system_bpf" remote="BlissRoms" />
+  <project path="system/core" name="platform_system_core" remote="BlissRoms" />
+  <project path="system/extras" name="platform_system_extras" remote="BlissRoms" />
+  <project path="system/keymaster" name="platform_system_keymaster" remote="BlissRoms" />
+  <project path="system/libhidl" name="platform_system_libhidl" remote="BlissRoms" />
+  <project path="system/logging" name="platform_system_logging" remote="BlissRoms" />
+  <project path="system/netd" name="platform_system_netd" remote="BlissRoms" />
+  <project path="system/security" name="platform_system_security" remote="BlissRoms" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="BlissRoms" />
+  <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" remote="BlissRoms" />
+  <project path="system/vold" name="platform_system_vold" remote="BlissRoms" />
+  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="BlissRoms" />
 
   <!-- Tools -->
   <project path="bliss/scripts" name="platform_scripts" remote="BlissRoms" />
 
   <!-- Vendor -->
-  <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissRoms-Beta" />
+  <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissRoms" />
   <project path="vendor/certification" name="platform_vendor_certification" remote="BlissRoms-gitlab" />
-  <project path="vendor/gms" name="platform_vendor_gms" remote="BlissRoms-gitlab" />
+  <project path="vendor/gms" name="vendor_gms" remote="gitea" />
   <project path="vendor/lineage_compat" name="platform_vendor_lineage_compat" remote="BlissRoms" />
   <project path="vendor/overlays" name="platform_vendor_overlays" remote="BlissRoms" />
-  <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="BlissRoms-gitlab" clone-depth="1" />
+  <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="BlissRoms-gitlab" revision="voyager-qpr1" clone-depth="1" />
   <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" />
 
 </manifest>
