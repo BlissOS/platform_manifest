@@ -2,7 +2,6 @@
 <manifest>
 	<!-- Remove first some AOSP/Lineage repos -->
 	<!-- <remove-project name="platform/tools/repohooks" /> -->
-	<remove-project name="platform_manifest" />
 	<remove-project name="platform_art" />
 	<remove-project name="platform_bionic" />
     <!--<remove-project name="platform/development" /> -->
