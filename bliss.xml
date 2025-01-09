@@ -31,7 +31,6 @@
   <project path="packages/modules/IntentResolver" name="platform_packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="BlissRoms" />
 
   <!-- General Repos -->
-  <project path="manifest" name="platform_manifest" remote="BlissRoms" />
   <project path="art" name="platform_art" remote="BlissRoms" />
   <project path="bionic" name="platform_bionic" remote="BlissRoms" />
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="BlissRoms" />
@@ -83,6 +82,7 @@
   <project path="packages/modules/common" name="platform_packages_modules_common" remote="BlissRoms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="BlissRoms" />
   <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissRoms" groups="pdk" />
+  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="BlissRoms" />
   <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="BlissRoms" />
 
   <!-- Packages -->
@@ -93,6 +93,7 @@
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="BlissRoms" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="BlissRoms" />
   <project path="packages/apps/DesktopMode" name="platform_packages_apps_DesktopMode" remote="BlissRoms" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="BlissRoms" />
   <project path="packages/apps/GameSpace" name="platform_packages_apps_GameSpace" remote="BlissRoms" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="BlissRoms" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="BlissRoms" />
