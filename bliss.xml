@@ -52,7 +52,6 @@
   <project path="external/gptfdisk" name="platform_external_gptfdisk" groups="pdk" remote="BlissRoms" />
   <project path="external/mksh" name="platform_external_mksh" groups="pdk" remote="BlissRoms" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="BlissRoms" />
-  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/zstd" name="platform_external_zstd" groups="pdk" remote="BlissRoms" />
 
   <!-- Frameworks -->
@@ -137,6 +136,7 @@
   <project path="vendor/lineage_compat" name="platform_vendor_lineage_compat" remote="BlissRoms" />
   <project path="vendor/overlays" name="platform_vendor_overlays" remote="BlissRoms" />
   <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="BlissRoms-gitlab" revision="voyager-qpr1" clone-depth="1" />
+  <project path="vendor/pixel-framework" name="platform_vendor_pixel-framework" remote="BlissRoms" />
   <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" />
 
 </manifest>
