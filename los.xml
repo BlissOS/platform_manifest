@@ -157,6 +157,7 @@
   <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" groups="qcom,lahaina" revision="lineage-22.1-caf-sm8350" remote="lineage" />
   <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="qcom" revision="lineage-22.1-caf-sm8350" remote="lineage" />
   <project path="hardware/qcom-caf/sm8450/audio/agm" name="android_vendor_qcom_opensource_agm" groups="qcom,waipio-vendor" revision="lineage-22.1-caf-sm8450" remote="lineage" />
+  <project path="hardware/qcom-caf/sm8450/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" groups="qcom" revision="lineage-22.1-caf-sm8450" remote="lineage" />
   <project path="hardware/qcom-caf/sm8450/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" groups="qcom,waipio-vendor" revision="lineage-22.1-caf-sm8450" remote="lineage" />
   <project path="hardware/qcom-caf/sm8450/audio/primary-hal" name="android_hardware_qcom_audio-ar" groups="qcom,waipio-vendor" revision="lineage-22.1-caf-sm8450" remote="lineage" />
   <project path="hardware/qcom-caf/sm8450/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" revision="lineage-22.1-caf-sm8450" remote="lineage" />
