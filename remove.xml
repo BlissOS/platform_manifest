@@ -86,6 +86,7 @@
   <remove-project name="platform/external/webp" />
   <remove-project name="platform/external/sonivox" />
   <remove-project name="platform/external/skia" />
+  <remove-project name="platform/external/giflib" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
