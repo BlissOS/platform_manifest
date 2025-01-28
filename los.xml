@@ -208,4 +208,7 @@
   <project path="vendor/nxp/secure_element" name="android_vendor_nxp_secure_element" groups="nxp" remote="lineage" revision="lineage-19.1" />
   <project path="vendor/nxp/secure_element_extns" name="android_vendor_nxp_secure_element_extns" groups="nxp" remote="lineage" revision="lineage-19.1" />
 
+  <!-- Misc -->
+  <project path="libcore" name="android_libcore" groups="pdk" revision="lineage-20.0" />
+
 </manifest>

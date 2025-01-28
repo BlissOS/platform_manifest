@@ -179,5 +179,6 @@
 
   <!-- Misc -->
   <remove-project name="platform/tools/apksig" />
+  <remove-project name="platform/libcore" />
 
 </manifest>
