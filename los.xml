@@ -41,6 +41,8 @@
   <project path="external/zstd" name="android_external_zstd" groups="pdk" remote="lineage" />
   <project path="external/libxml2" name="android_external_libxml2" groups="pdk,libxml2" remote="lineage" />
   <project path="external/sonivox" name="android_external_sonivox" groups="pdk" remote="lineage" />
+  <project path="external/skia" name="android_external_skia" groups="pdk,qcom_msm8x26" remote="lineage" />
+  <project path="external/giflib" name="android_external_giflib" groups="pdk,qcom_msm8x26" remote="lineage" />
 
   <!-- Hardware -->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="lineage" />
@@ -81,9 +83,11 @@
 
   <!-- Packages -->
   <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" groups="pdk-fs" remote="lineage" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="lineage" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="lineage" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="lineage" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="lineage" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" clone-depth="1" remote="lineage" />
@@ -92,6 +96,7 @@
   <project path="system/logging" name="android_system_logging" remote="lineage" revision="lineage-20.0" />
   <project path="system/libfmq" name="android_system_libfmq" groups="pdk" remote="lineage" />
   <project path="system/libziparchive" name="android_system_libziparchive" remote="lineage" revision="lineage-20.0" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="lineage" revision="lineage-20.0" />
 
   <!-- QCOM Hals -->
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,waipio-vendor" revision="lineage-20.0-caf" remote="lineage" />
@@ -206,5 +211,8 @@
   <project path="vendor/nxp/nfc" name="android_vendor_nxp_nfc" groups="nxp" remote="lineage" revision="lineage-19.1" />
   <project path="vendor/nxp/secure_element" name="android_vendor_nxp_secure_element" groups="nxp" remote="lineage" revision="lineage-19.1" />
   <project path="vendor/nxp/secure_element_extns" name="android_vendor_nxp_secure_element_extns" groups="nxp" remote="lineage" revision="lineage-19.1" />
+
+  <!-- Misc -->
+  <project path="libcore" name="android_libcore" groups="pdk" revision="lineage-20.0" />
 
 </manifest>
