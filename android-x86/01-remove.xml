@@ -5,8 +5,8 @@
 	<remove-project name="platform_manifest" />
 	<remove-project name="platform/art" />
 	<remove-project name="platform_bionic" />
-    <!--<remove-project name="platform/development" />
-    <remove-project name="platform_bootable_recovery" /> -->
+    <!--<remove-project name="platform/development" />-->
+    <remove-project name="platform_bootable_recovery" />
 	<remove-project name="platform_device_bliss_sepolicy" />
 	<remove-project name="platform_device_qcom_sepolicy" />
 	<remove-project name="platform_device_qcom_sepolicy_vndr" />
