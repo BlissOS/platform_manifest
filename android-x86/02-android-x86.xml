@@ -40,7 +40,7 @@
   <!-- Kernel -->
   <project path="kernel/x86/common" name="kerNel_common" remote="ag-github" sync-s="true" revision="hm/crimson" />
   <project path="kernel/x86/surface" name="kernel_cOmmon" remote="ag-github" sync-s="true" revision="hm/crimson-surface" />
-  <project path="kernel/x86/zenith" name="kernel-zenith" remote="ag-github" sync-s="true" revision="6.11" />
+  <project path="kernel/x86/zenith" name="kernel-zenith" remote="ag-github" sync-s="true" revision="6.12" />
   <project path="external/kernel-drivers" name="exTernal_kernel-drivers" sync-s="true" remote="ag-github" revision="6.6" />
   <project path="external/kernel-drivers-zenith" name="external_keRnel-drivers" sync-s="true" remote="ag-github" revision="zenith" />
   <project path="prebuilts/clang/host/linux-x86/clang-r536225" name="vermouth/android_prebuilts_clang_host_linux-x86_clang-r536225" remote="gitlab" revision="14.0" />
