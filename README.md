@@ -34,7 +34,20 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 
 ## Grabbing Dependencies
 
-    sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python3-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet meson glslang-tools git-lfs libncurses5 libncurses5:i386 libelf-dev aapt zstd rdfind nasm rustc bindgen
+    sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python3-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet meson glslang-tools git-lfs libncurses5 libncurses5:i386 libelf-dev aapt zstd rdfind nasm
+
+    Rust toolchain & programs are also required. We recommend you to install them using rustup !
+    First, remove distro' Rust toolchain:
+    sudo apt remove rustc bindgen cargo -y
+    
+    Next install rustup by following this page:
+    https://www.rust-lang.org/tools/install
+
+    After getting rustup installed, install required programs & toolchain:
+    cargo install cargo-ndk
+    rustup target add x86_64-linux-android i686-linux-android
+    cargo install --version 0.69.1 bindgen-cli
+    cargo install cbindgen
 
 ## Initializing Repository
 
