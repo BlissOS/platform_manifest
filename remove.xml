@@ -2,6 +2,7 @@
 <manifest>
 
   <!-- Core -->
+  <remove-project name="platform/art" />
   <remove-project name="platform/bootable/deprecated-ota" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
