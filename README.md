@@ -49,6 +49,8 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
     
     Next install rustup by following this page:
     https://www.rust-lang.org/tools/install
+    For Linux they recomend running the shell script below to begin the install
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
     After getting rustup installed, install required programs & toolchain:
     cargo install cargo-ndk
