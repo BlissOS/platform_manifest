@@ -33,8 +33,15 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 -----------------------
 
 ## Grabbing Dependencies
+    sudo nano /etc/apt/sources.list.d/ubuntu.sources
+    Verify you have focal-security in your sources if you are on any version above Focal Fossa (20.04 LTS). Latest LTS is currently Ubuntu 24.04.2 LTS as of 04/22/2025.
+    ![image](https://github.com/user-attachments/assets/d9a3e6d7-6db4-49fc-8274-b8a3945edbd5)
 
-    sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python3-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet meson glslang-tools git-lfs libncurses5 libncurses5:i386 libelf-dev aapt zstd rdfind nasm
+    sudo dpkg --add-architecture i386
+
+    dudo apt-get update
+
+    sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python3-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet meson glslang-tools git-lfs libncurses5 libncurses5:i386 libelf-dev aapt zstd rdfind nasm
 
     Rust toolchain & programs are also required. We recommend you to install them using rustup !
     First, remove distro' Rust toolchain:
