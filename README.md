@@ -35,7 +35,7 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 ## Grabbing Dependencies
     sudo nano /etc/apt/sources.list.d/ubuntu.sources
     Verify you have focal-security in your sources if you are on any version above Focal Fossa (20.04 LTS). Latest LTS is currently Ubuntu 24.04.2 LTS as of 04/22/2025.
-    ![image](https://github.com/user-attachments/assets/d9a3e6d7-6db4-49fc-8274-b8a3945edbd5)
+![image](https://github.com/user-attachments/assets/d9a3e6d7-6db4-49fc-8274-b8a3945edbd5)
 
     sudo dpkg --add-architecture i386
 
