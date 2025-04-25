@@ -26,6 +26,7 @@
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="lineage" />
   <project path="external/htop" name="android_external_htop" remote="lineage" />
+  <project path="external/icu" name="android_external_icu" remote="lineage" groups="pdk" />
   <project path="external/libncurses" name="android_external_libncurses" remote="lineage" />
   <project path="external/openssh" name="android_external_openssh" groups="pdk" remote="lineage" />
   <project path="external/nano" name="android_external_nano" remote="lineage" />
@@ -98,6 +99,7 @@
   <project path="system/libfmq" name="android_system_libfmq" groups="pdk" remote="lineage" />
   <project path="system/libziparchive" name="android_system_libziparchive" remote="lineage" revision="lineage-20.0" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="lineage" revision="lineage-20.0" />
+  <project path="system/timezone" name="android_system_timezone" remote="lineage" revision="lineage-20.0" groups="pdk" />
 
   <!-- QCOM Hals -->
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,waipio-vendor" revision="lineage-20.0-caf" remote="lineage" />
