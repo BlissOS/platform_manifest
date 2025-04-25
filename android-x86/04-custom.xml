@@ -5,7 +5,7 @@
 
   <!-- Device tree -->
   <project path="device/generic/common" name="device_generic_common" remote="BlissOS" sync-s="true" />
-  <project path="device/generic/x86_64" name="platform_device_generic_x86_64" remote="BR-x86" revision="r11" />
-  <project path="device/generic/x86" name="platform_device_generic_x86" remote="BR-x86" revision="r-x86" />
+  <project path="device/generic/x86_64" name="device_generic_x86_64" remote="BlissOS" />
+  <project path="device/generic/x86" name="device_generic_x86" remote="BlissOS" />
 
 </manifest>
