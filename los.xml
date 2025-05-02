@@ -22,6 +22,7 @@
   <project path="external/chromium-webview/prebuilt/x86" name="android_external_chromium-webview_prebuilt_x86" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/chromium-webview/prebuilt/x86_64" name="android_external_chromium-webview_prebuilt_x86_64" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/bash" name="android_external_bash" remote="lineage" />
+  <project path="external/cldr" name="android_external_cldr" groups="pdk" remote="lineage" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="lineage" />

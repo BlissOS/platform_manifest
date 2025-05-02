@@ -70,6 +70,7 @@
   <remove-project name="platform/build/soong" />
 
   <!-- External -->
+  <remove-project name="platform/external/cldr" />
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/dng_sdk" />
   <remove-project name="platform/external/e2fsprogs" />
