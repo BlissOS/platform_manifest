@@ -70,7 +70,7 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 ## Building
 
     $ . build/envsetup.sh
-    $ lunch bliss_x86_64-ap1a-userdebug
+    $ lunch bliss_x86_64-ap2a-userdebug
     $ make iso_img
      
 ***Adding build options***
