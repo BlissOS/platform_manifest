@@ -33,7 +33,7 @@
   <project path="external/libdrm" name="platform_external_libdrm" remote="ag-github" revision="2.4.124_u-x86" />
   <project path="external/llvm-project" name="external_llvm-project" remote="ag-github" revision="release_20.x_llvm-min-tblgen" />
   <project path="prebuilts/llvm-min-tblgen" name="llvm-min-tblgen" remote="ag-github" revision="release_20.x" />
-  <project path="external/mesa" name="external_mesa" remote="ag-github" revision="24.3_prebuilt-intel-shaders" />
+  <project path="external/mesa" name="external_mesa" remote="ag-github" revision="25.0_prebuilt-intel-shaders" />
   <project path="external/minigbm" name="external_minigbm" remote="ag-github" revision="14-x86" />
   <project path="external/hbm-prebuilts" name="external_hbm-prebuilts" remote="ag-github" revision="11" />
 
