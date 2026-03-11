@@ -49,4 +49,5 @@
     <remove-project name="platform/system/apex" />
     <remove-project name="platform/external/intel-media-driver" />
     <remove-project name="platform/external/gmmlib" />
+    <remove-project name="platform/hardware/google/gfxstream" />
 </manifest>
