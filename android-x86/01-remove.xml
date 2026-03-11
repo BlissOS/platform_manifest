@@ -47,4 +47,6 @@
     <remove-project name="LineageOS/android_packages_modules_NetworkStack" />
     <remove-project name="platform/prebuilts/abi-dumps/vndk" />
     <remove-project name="platform/system/apex" />
+    <remove-project name="platform/external/intel-media-driver" />
+    <remove-project name="platform/external/gmmlib" />
 </manifest>
