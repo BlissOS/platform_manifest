@@ -69,7 +69,7 @@
   <project path="hardware/x86power" name="hardware_x86power" remote="ag-github" revision="r11" />
 
   <!-- AOSP components but newer -->
-  <project path="external/toybox" name="android_external_toybox" remote="ag-github" revision="14" />
+  <project path="external/toybox" name="android_external_toybox" remote="ag-github" revision="voyager-x86-qpr2" />
 
   <!-- GloDroid -->
   <project path="glodroid/aospext" name="glodroid_aospext" remote="ag-github" revision="main" />
