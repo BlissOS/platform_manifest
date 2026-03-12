@@ -20,7 +20,6 @@
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="BlissOS" />
   <project path="packages/apps/Blissify" name="platform_packages_apps_Blissify" remote="BlissOS" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="BlissOS" />
-  <project path="packages/apps/ParanoidSense" name="BlissLabs/BlissOS/platform_packages_apps_paranoidsense" remote="gl" revision="universe" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="BlissOS" />
   <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="BlissOS" />
   <project path="packages/modules/NetworkStack" name="platform_packages_modules_NetworkStack" remote="BlissOS" />
@@ -33,5 +32,4 @@
   <project path="system/hardware/interfaces" name="platform_system_hardware_interfaces" remote="BlissOS" />
   <project path="hardware/google/gfxstream" name="platform_hardware_google_gfxstream" remote="BlissOS" />
   <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissOS" />
-  <project path="vendor/overlays" name="platform_vendor_overlays" remote="BlissOS" />  
 </manifest>
