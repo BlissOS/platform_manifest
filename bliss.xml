@@ -13,6 +13,10 @@
           fetch="https://gitlab.com/BlissLabs/BlissRoms"
           revision="universe" />
 
+  <remote name="BlissOS-gitlab"
+          fetch="https://gitlab.com/BlissLabs/BlissOS"
+          revision="universe-x86" />
+
   <remote name="BR-x86"
           fetch="https://github.com/BlissRoms-x86" />
 
@@ -142,7 +146,7 @@
   <project path="vendor/bliss" name="platform_vendor_bliss" remote="BlissRoms" />
   <project path="vendor/certification" name="platform_vendor_certification" remote="BlissRoms-gitlab" />
   <project path="vendor/overlays" name="platform_vendor_overlays" remote="BlissRoms" />
-  <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="BlissRoms-gitlab" clone-depth="1" />
+  <project path="vendor/prebuilts" name="platform_vendor_prebuilts" remote="BlissOS-gitlab" clone-depth="1" />
   <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" />
   <project path="vendor/gapps" name="platform_vendor_gapps" remote="BlissRoms-gitlab" clone-depth="1" revision="universe" />
   <project path="vendor/SystemUIClocks" name="platform_vendor_systemuiclocks" remote="BlissRoms-gitlab" clone-depth="1" revision="universe" />
