@@ -46,7 +46,7 @@
   <project path="prebuilts/clang/host/linux-x86/clang-r536225" name="vermouth/android_prebuilts_clang_host_linux-x86_clang-r536225" remote="gitlab" revision="14.0" />
 
   <!-- Media HAL & VAAPI drivers -->
-  <project path="external/stagefright-plugins" name="external_stagefright-plugins" remote="ag-github" revision="14-x86" />
+  <project path="external/stagefright-plugins" name="external_stagefright-plugins" remote="ag-github" revision="universe-x86" />
   <project path="external/ffmpeg" name="android_external_ffmpeg" remote="ag-github" revision="release/7.0-14" />
   <project path="external/libva-utils" name="external_libva-utils" remote="ag-github" revision="14-x86" />
   <project path="hardware/intel/common/libva" name="hardware_intel_common_libva" remote="ag-github" revision="14-x86" />
