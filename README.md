@@ -36,7 +36,9 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 
     sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python3-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet meson glslang-tools git-lfs libncurses5 libncurses5:i386 libelf-dev aapt zstd rdfind nasm kmod python3-ply pkg-config libva-dev
 
-    Rust toolchain & programs are also required. We recommend you to install them using rustup !
+	if you are using Ubuntu > 24, you probably need to find the sources of libncurses5, lib32ncurses5-dev somewhere else, as they do not exist on this distribution
+	
+	Rust toolchain & programs are also required. We recommend you to install them using rustup !
     First, remove distro' Rust toolchain:
     sudo apt remove rustc bindgen cargo -y
     
