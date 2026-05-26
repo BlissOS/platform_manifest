@@ -28,7 +28,7 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
     Latest Ubuntu LTS Releases https://www.ubuntu.com/download/server
     Decent CPU (Dual Core or better for a faster performance)
     24GB RAM (30GB for Virtual Machine)
-    250GB Hard Drive (about 170GB for the Repo and then building space needed)
+    350GB Hard Drive (about 180GB for the Repo and then building space needed)
   
 -----------------------
 
