@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Audio -->
-  <project path="external/alsa-lib" name="external_alsa-lib" remote="ag-github" revision="v-x86" />
-  <project path="external/alsa-utils" name="external_alsa-utils" remote="ag-github" revision="pie-x86" />
+  <project path="external/alsa-lib" name="external_alsa-lib" remote="ag-github" revision="bp" />
+  <project path="external/alsa-utils" name="external_alsa-utils" remote="ag-github" revision="bp" />
   <!-- Note : libncurses is required for alsa_mixer -->
   <project path="external/alsa-ucm-conf" name="external_alsa-ucm-conf" remote="ag-github" revision="pie-x86" />
   <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="ag-github" revision="14-x86" />
